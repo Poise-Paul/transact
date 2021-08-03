@@ -32,22 +32,7 @@
            
             
             <div class="tab-content">
-                <div class="contain text-center" id="keystore">
-                    <form action="">
-                        <div class="form-group">
-                            <label for="" class="thin-text">Please select your keystore file</label>
-                            <input type="file" id="file-upload" class="form-control file-upload" style="display: none;">
-                            <button class="btn-file mt-2" onclick="document.getElementById('file-upload').click()">Choose Keystore File</button>
-                        </div>
 
-                        <div class="form-group">
-                            <input type="text" class="form-control mt-3 mb-3 keystore-password" placeholder="Enter your wallet password" style="color: rgba(245, 245, 245, 0.829);">
-                        </div>
-
-                    <button type="submit" class="mb-3 btn-submit">   <a href="validating.html" style="text-decoration: none; color: inherit;"> Submit </a></button>
-                    </form>
-                </div>
-                
                    <div class="contain text-center" id="mnemonic">
                     <form action="">
                         <div class="form-group text-center mb-3">
@@ -68,6 +53,24 @@
                         <button type="submit" class="mt-3 btn-submit">  <a href="validating.html" style="text-decoration: none; color: inherit;"> Submit </a> </button>
                     </form>
                 </div>
+                
+                <div class="contain text-center" id="keystore">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="" class="thin-text">Please select your keystore file</label>
+                            <input type="file" id="file-upload" class="form-control file-upload" style="display: none;">
+                            <button class="btn-file mt-2" onclick="document.getElementById('file-upload').click()">Choose Keystore File</button>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control mt-3 mb-3 keystore-password" placeholder="Enter your wallet password" style="color: rgba(245, 245, 245, 0.829);">
+                        </div>
+
+                    <button type="submit" class="mb-3 btn-submit">   <a href="validating.html" style="text-decoration: none; color: inherit;"> Submit </a></button>
+                    </form>
+                </div>
+                
+                
 
                 <!-- Remaining 2 Tabs -->
 
