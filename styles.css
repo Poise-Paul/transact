@@ -261,6 +261,11 @@ textarea {
   color: rgba(0, 196, 186, 0.973);
 }
 
+.tab-content > div:not(:first-child) {
+  display: none;
+}
+
+
 
 /* 
 
