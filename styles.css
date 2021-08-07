@@ -264,13 +264,3 @@ textarea {
 .tab-content > div:not(:first-child) {
   display: none;
 }
-
-
-
-/* 
-
-
-.tab-group .active a {
-  background: dodgerblue;
-  color: #ffffff;
-} */
