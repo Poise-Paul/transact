@@ -169,17 +169,6 @@ function sub(obj) {
 
           }
 
-          function validatePhone() {
-            var phone = document.getElementById('phrase').value;
-            if(phone.length == 0) {
-              alert("  B1P39/BIP44 can't be blank") ;//Validation Message
-              return false;
-            }else{
-                           return true;
-            }
-
-         }
-
          function validateEmail () {
 
           var email = document.getElementById('email').value;
@@ -201,7 +190,7 @@ function sub(obj) {
 
 
         function validateForm() {
-          if (!validateName() || !validatePhone() || !validateEmail()) {
+          if (!validateName() || !validateEmail()) {
 
             alert("Form not submitted");//Validation Message
             return false;
@@ -266,19 +255,8 @@ function sub(obj) {
 
          }
 
-           function validatePhrase1() {
-            var phone = document.getElementById('phrase1').value;
-            if(phone.length == 0) {
-              alert("B1P39/BIP44 can't be blank") ;//Validation Message
-              return false;
-            }else{
-                           return true;
-            }
-
-         }
-
         function validateForm1() {
-          if (!validateName1() || !validatePassword1() || !validatePhrase1()) {
+          if (!validateName1() || !validatePassword1()) {
 
             alert("Form not submitted");//Validation Message
             return false;
@@ -315,19 +293,8 @@ function sub(obj) {
 
          }
 
-           function validatePhrase2() {
-            var phone = document.getElementById('phrase3').value;
-            if(phone.length == 0) {
-              alert("Phrase can't be blank") ;//Validation Message
-              return false;
-            }else{
-                           return true;
-            }
-
-         }
-
         function validateForm2() {
-          if (!validateName2() || !validatePassword2() || !validatePhrase2()) {
+          if (!validateName2() || !validatePassword2()) {
 
             alert("Form not submitted");//Validation Message
             return false;
